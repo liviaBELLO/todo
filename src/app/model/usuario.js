@@ -1,4 +1,3 @@
-const tarefa = require('../model/tarefa');
 const mongoose = require('mongoose');
 
 const usuario = new mongoose.Schema({
@@ -16,8 +15,7 @@ const usuario = new mongoose.Schema({
         type: Number
       },
       listaTarefa:{
-        type: Array,
-        default: [tarefa]
+        type: Array
       }
 }, {
   collection: 'usuario', versionKey: false
